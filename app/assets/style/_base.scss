@@ -1,0 +1,154 @@
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: $gray-900;
+    font-size: $font-size-base;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    height: 100%;
+    transition: .3s;
+
+    &:hover {
+        color: $primary;
+        transition: .3s;
+    }
+}
+
+h2 {
+    font-size: $h4-font-size;
+    font-weight: 700;
+}
+h5 {
+    font-size: $font-size-sm;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+.c-border {
+    // border: 1px solid #ddd;
+}
+
+.icon-primary {
+    color: $primary;
+}
+
+//menu-block
+.menu-block {
+    background-color: #F8F9FA;
+    padding: 32px;
+
+    li {
+        font-weight: 700;
+        margin-bottom: 26px;
+    }
+
+    .user-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}
+
+//admin-block
+.admin-block {
+    padding: 32px;
+
+    .table-block {
+        tbody,
+        td,
+        tfoot,
+        th,
+        thead,
+        tr {
+            border-color: inherit;
+            border-style: solid;
+        }
+    }
+}
+
+//Modal
+.modal {
+    height: 100vh;
+    .modal-header {
+        border-bottom: none;
+    }
+    .modal-dialog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 0 auto;
+        // max-width: 480px;
+    }
+    .modal-body {
+        padding:0 32px 32px;
+        .img-block {
+            background: url(../images/emir.jpeg) center no-repeat;
+            background-size: cover;
+            height: 140px;
+        }
+        .h5-tag {
+            background-color: #F8F9FA;
+            padding: 8px 16px;
+        }
+    }
+}
+
+
+//pagination-block
+.pagination-block {
+    margin-top: 63px;
+    .page-link,
+    .material-icons {
+        // font-size: 20px;
+    }
+    .page-item.active{
+        .page-link {
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+    
+    .page-link {
+        color: $primary;
+        border: 1px solid $primary;
+
+        &:hover {
+            background-color: $primary;
+            color: #fff;
+        }
+    }
+}

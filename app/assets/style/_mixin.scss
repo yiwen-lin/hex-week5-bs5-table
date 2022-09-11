@@ -1,0 +1,14 @@
+$ipad:992px;
+$mobile:767px;
+
+@mixin pad {
+    @media(max-width:$ipad){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media(max-width:$mobile){
+        @content;
+    }
+}
